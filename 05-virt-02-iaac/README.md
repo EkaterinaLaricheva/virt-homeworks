@@ -40,6 +40,7 @@
 ![image](https://user-images.githubusercontent.com/91233405/153911013-9cb38883-bfd2-41cf-8050-788ce2df3551.png)
 
 - Ansible
+![image](https://user-images.githubusercontent.com/91233405/154114423-d47c1a4c-adf3-46ce-992f-4dde74cf5879.png)
 
 
 
@@ -54,3 +55,5 @@
 ```
 docker ps
 ```
+Не смогла сделать.
+![image](https://user-images.githubusercontent.com/91233405/154123268-e1b4672b-c54a-4f93-adbb-9ae5efc30caa.png)
