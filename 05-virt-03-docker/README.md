@@ -76,6 +76,7 @@ https://hub.docker.com/repository/docker/lekani/elaricheva
 
 
 Решение:
+
 vagrant@server1:~$ docker pull centos:latest
 
 vagrant@server1:/data$ docker run --mount 'type=bind,source=/home/vagrant/data,target=/data' -it -d --entrypoint bash centos
