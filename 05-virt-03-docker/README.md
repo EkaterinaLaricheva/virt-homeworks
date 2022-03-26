@@ -74,6 +74,32 @@ https://hub.docker.com/repository/docker/lekani/elaricheva
 - Добавьте еще один файл в папку ```/data``` на хостовой машине;
 - Подключитесь во второй контейнер и отобразите листинг и содержание файлов в ```/data``` контейнера.
 
+
+Решение:
+vagrant@server1:~$ docker pull centos:latest
+vagrant@server1:/data$ docker run --mount 'type=bind,source=/home/vagrant/data,target=/data' -it -d --entrypoint bash centos
+vagrant@server1:~$docker pull debian:latest
+vagrant@server1:/data$ docker run --mount 'type=bind,source=/home/vagrant/data,target=/data' -it -d --entrypoint bash Debian
+vagrant@server1:/data$ docker exec -it 3e2416131cbf bash
+[root@3e2416131cbf /]# cd /data
+[root@3e2416131cbf data]# touch testfile2
+[root@3e2416131cbf data]# echo URAAA > /data/testfile2
+[root@3e2416131cbf data]# cat testfile2
+URAAA
+[root@3e2416131cbf data]# exit
+vagrant@server1:~/data$ sudo vim  host
+vagrant@server1:~/data$ cat host
+rgij
+vagrant@server1:~/data$ docker exec -it a52d7b1604c4 bash
+root@a52d7b1604c4:/# cd data
+root@a52d7b1604c4:/data# ls
+host  testfile2
+
+![image](https://user-images.githubusercontent.com/91233405/160253104-1492a19d-cb5d-4e11-9867-d97fe1332ba4.png)
+
+
+
+
 ## Задача 4 (*)
 
 Воспроизвести практическую часть лекции самостоятельно.
