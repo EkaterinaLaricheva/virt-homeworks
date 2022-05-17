@@ -32,6 +32,12 @@ b70831b045a9cc3e2b1c3d1655b39d8203fd9d4d8d7e74f19e31ac7e99719101
 
 В БД из задачи 1: 
 - создайте пользователя test-admin-user и БД test_db
+vagrant=# CREATE DATABASE test_db;
+CREATE DATABASE
+
+vagrant=# CREATE ROLE "test-admin-user" SUPERUSER NOCREATEDB NOCREATEROLE NOINHERIT LOGIN;
+CREATE ROLE
+
 - в БД test_db создайте таблицу orders и clients (спeцификация таблиц ниже)
 - предоставьте привилегии на все операции пользователю test-admin-user на таблицы БД test_db
 - создайте пользователя test-simple-user  
