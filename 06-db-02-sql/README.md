@@ -42,8 +42,18 @@ vagrant=# CREATE ROLE "test-admin-user" SUPERUSER NOCREATEDB NOCREATEROLE NOINHE
 CREATE ROLE
 
 - в БД test_db создайте таблицу orders и clients (спeцификация таблиц ниже)
+
+![image](https://user-images.githubusercontent.com/91233405/168842639-86320fd1-f7e7-468b-ab84-8d825648cea9.png)
+
+![image](https://user-images.githubusercontent.com/91233405/168842693-d39388c8-8f5e-4ded-aa02-8df4288c2ec1.png)
+
 - предоставьте привилегии на все операции пользователю test-admin-user на таблицы БД test_db
-- создайте пользователя test-simple-user  
+- создайте пользователя test-simple-user 
+
+test_db=# CREATE ROLE "test-simple-user" NOSUPERUSER NOCREATEDB NOCREATEROLE NOINHERIT LOGIN;
+
+CREATE ROLE
+
 - предоставьте пользователю test-simple-user права на SELECT/INSERT/UPDATE/DELETE данных таблиц БД test_db
 
 Таблица orders:
