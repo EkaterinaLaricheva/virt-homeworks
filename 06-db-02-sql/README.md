@@ -139,8 +139,15 @@ GRANT
 |Ронни Джеймс Дио| Russia|
 |Ritchie Blackmore| Russia|
 
+![image](https://user-images.githubusercontent.com/91233405/168846752-d56e9b96-a5b0-43c6-9a65-c9cc60c83acb.png)
+
+
 Используя SQL синтаксис:
 - вычислите количество записей для каждой таблицы 
+
+
+![image](https://user-images.githubusercontent.com/91233405/168847048-96881316-156e-4377-a818-64b23de59189.png)
+
 - приведите в ответе:
     - запросы 
     - результаты их выполнения.
