@@ -102,9 +102,18 @@ GRANT
 
 Приведите:
 - итоговый список БД после выполнения пунктов выше,
+![image](https://user-images.githubusercontent.com/91233405/168846044-14d09dfd-317e-4fdd-86df-e820c93c91a7.png)
+
 - описание таблиц (describe)
+-![image](https://user-images.githubusercontent.com/91233405/168845066-e5259e15-1083-4032-99d4-6d0e63373a3a.png)
+
 - SQL-запрос для выдачи списка пользователей с правами над таблицами test_db
+![image](https://user-images.githubusercontent.com/91233405/168845689-ed175b10-dab2-4694-a612-2792df5c5998.png)
+
 - список пользователей с правами над таблицами test_db
+
+![image](https://user-images.githubusercontent.com/91233405/168845837-788cfdea-7887-421f-bb0e-a463b3e60062.png)
+
 
 ## Задача 3
 
