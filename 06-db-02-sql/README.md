@@ -12,6 +12,17 @@
 
 Приведите получившуюся команду или docker-compose манифест.
 
+vagrant@vagrant:~$ sudo docker pull postgres:12
+vagrant@vagrant:~$ sudo docker volume create vol2
+vol2
+vagrant@vagrant:~$ sudo docker volume create vol1
+vol1
+vagrant@vagrant:~$ sudo docker run --rm --name vagrant-netology -e POSTGRES_PASSWORD=vagrant -e POSTGRES_USER=vagrant -e POSTGRES_DB=vagrant -d -ti -p 2222:2222 -v vol1:/var/lib/postgresql/data -v vol2:/var/lib/postgresql postgres:12
+b70831b045a9cc3e2b1c3d1655b39d8203fd9d4d8d7e74f19e31ac7e99719101
+
+![image](https://user-images.githubusercontent.com/91233405/168837973-a0fe1d9d-3537-48a2-84bd-14db5d62d4d6.png)
+
+
 ## Задача 2
 
 В БД из задачи 1: 
