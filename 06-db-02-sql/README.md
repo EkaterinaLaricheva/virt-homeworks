@@ -192,14 +192,81 @@ width — средний размер одной строки в байтах.
 ## Задача 6
 
 Создайте бэкап БД test_db и поместите его в volume, предназначенный для бэкапов (см. Задачу 1).
+![image](https://user-images.githubusercontent.com/91233405/168852236-dad7d222-53cb-46c5-9130-9b4ceb6a1a46.png)
 
 Остановите контейнер с PostgreSQL (но не удаляйте volumes).
 
+root@vagrant:~# docker container stop b70831b045a9
+
+b70831b045a9
+
+![image](https://user-images.githubusercontent.com/91233405/168853455-96f7ad94-f612-44f8-8b01-8697d17d97e4.png)
+
+
 Поднимите новый пустой контейнер с PostgreSQL.
 
+vagrant@vagrant:~$ sudo docker run --rm  --name vagrant-netology2 -e POSTGRES_PASSWORD=vagrant -e POSTGRES_USER=vagrant -e POSTGRES_DB=vagrant -d -ti -p 5432:5432 -v vol1:/var/lib/postgresql/data -v vol2:/var/lib/postgresql postgres:12
+
+cdc976419844d89e56eeb7e5063c6ce45cdef27210db52637530b51e14db45bc
+
 Восстановите БД test_db в новом контейнере.
+БД восстановилась автоматически, т.к. Vol тоже подключились автоматически.
+
+![image](https://user-images.githubusercontent.com/91233405/168855334-d938f0ff-2328-43be-ba3b-5b58e4ca6076.png)
+
 
 Приведите список операций, который вы применяли для бэкапа данных и восстановления. 
+
+vagrant=# drop database test_db;
+DROP DATABASE
+vagrant=# create database test_db;
+CREATE DATABASE
+vagrant=# \q
+root@273g0bc6a0b3:/# psql -U vagrant -d test_db -f /var/lib/postgresql/data/dump_test.sql;
+SET
+SET
+SET
+SET
+SET
+ set_config
+------------
+
+(1 row)
+
+SET
+SET
+SET
+SET
+SET
+SET
+CREATE TABLE
+ALTER TABLE
+CREATE TABLE
+ALTER TABLE
+COPY 5
+COPY 5
+ALTER TABLE
+ALTER TABLE
+ALTER TABLE
+GRANT
+GRANT
+root@273g0bc6a0b3:/#  psql -U vagrant
+psql (12.10 (Debian 12.10-1.pgdg110+1))
+Type "help" for help.
+
+vagrant=# \l
+                               List of databases
+   Name    |  Owner  | Encoding |  Collate   |   Ctype    |  Access privileges
+-----------+---------+----------+------------+------------+---------------------
+ postgres  | vagrant | UTF8     | en_US.utf8 | en_US.utf8 |
+ template0 | vagrant | UTF8     | en_US.utf8 | en_US.utf8 | =c/vagrant         +
+           |         |          |            |            | vagrant=CTc/vagrant
+ template1 | vagrant | UTF8     | en_US.utf8 | en_US.utf8 | =c/vagrant         +
+           |         |          |            |            | vagrant=CTc/vagrant
+ test_db   | vagrant | UTF8     | en_US.utf8 | en_US.utf8 |
+ vagrant   | vagrant | UTF8     | en_US.utf8 | en_US.utf8 |
+(5 rows)
+
 
 ---
 
