@@ -56,6 +56,39 @@ CREATE ROLE
 
 - предоставьте пользователю test-simple-user права на SELECT/INSERT/UPDATE/DELETE данных таблиц БД test_db
 
+test_db=# GRANT SELECT ON TABLE public.clients TO "test-simple-user";
+
+GRANT
+
+test_db=# GRANT INSERT ON TABLE public.clients TO "test-simple-user";
+
+GRANT
+
+test_db=# GRANT UPDATE ON TABLE public.clients TO "test-simple-user";
+
+GRANT
+
+test_db=# GRANT DELETE ON TABLE public.clients TO "test-simple-user";
+
+GRANT
+
+test_db=# GRANT SELECT ON TABLE public.orders TO "test-simple-user";
+
+GRANT
+
+test_db=# GRANT INSERT ON TABLE public.orders TO "test-simple-user";
+
+GRANT
+
+test_db=# GRANT UPDATE ON TABLE public.orders TO "test-simple-user";
+
+GRANT
+
+test_db=# GRANT DELETE ON TABLE public.orders TO "test-simple-user";
+
+GRANT
+
+
 Таблица orders:
 - id (serial primary key)
 - наименование (string)
