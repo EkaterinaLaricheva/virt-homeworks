@@ -166,7 +166,13 @@ GRANT
 
 Приведите SQL-запросы для выполнения данных операций.
 
+![image](https://user-images.githubusercontent.com/91233405/168847485-0a104414-2efd-4a5b-9d77-aeebfa6bf1ee.png)
+
+
 Приведите SQL-запрос для выдачи всех пользователей, которые совершили заказ, а также вывод данного запроса.
+
+![image](https://user-images.githubusercontent.com/91233405/168847588-e279fcff-2a69-437c-a498-10d745448ac7.png)
+
  
 Подсказк - используйте директиву `UPDATE`.
 
