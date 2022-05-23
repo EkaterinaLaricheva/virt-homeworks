@@ -67,16 +67,31 @@ General
 
 Используя `psql` создайте БД `test_database`.
 
+![image](https://user-images.githubusercontent.com/91233405/169832528-4aecfb3b-85fe-43a5-9b27-54a3d36bcd02.png)
+
+
+
 Изучите [бэкап БД](https://github.com/netology-code/virt-homeworks/tree/master/06-db-04-postgresql/test_data).
 
 Восстановите бэкап БД в `test_database`.
 
+![image](https://user-images.githubusercontent.com/91233405/169837750-14522166-c4a3-429d-bc4a-754923e8ec8e.png)
+
+
 Перейдите в управляющую консоль `psql` внутри контейнера.
+
+
 
 Подключитесь к восстановленной БД и проведите операцию ANALYZE для сбора статистики по таблице.
 
+![image](https://user-images.githubusercontent.com/91233405/169838692-9b9265ce-214e-42c1-ae64-d559cde71230.png)
+
+
 Используя таблицу [pg_stats](https://postgrespro.ru/docs/postgresql/12/view-pg-stats), найдите столбец таблицы `orders` 
 с наибольшим средним значением размера элементов в байтах.
+
+![image](https://user-images.githubusercontent.com/91233405/169838858-8abdd07f-c45c-4c1c-8271-9e69d672d5b8.png)
+
 
 **Приведите в ответе** команду, которую вы использовали для вычисления и полученный результат.
 
