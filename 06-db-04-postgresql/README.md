@@ -103,13 +103,25 @@ General
 
 Предложите SQL-транзакцию для проведения данной операции.
 
+![image](https://user-images.githubusercontent.com/91233405/169839697-6f50aa4d-31fa-4f9f-8bc1-b7e8fa6f5d88.png)
+
+
 Можно ли было изначально исключить "ручное" разбиение при проектировании таблицы orders?
+
+Если сразу создать секционированную таблицу
 
 ## Задача 4
 
 Используя утилиту `pg_dump` создайте бекап БД `test_database`.
 
+vagrant@vagrant:~$ sudo docker exec -it pg-netology bash
+
+root@328aa7a4634f:/# cd /var/lib/postgresql
+
+root@328aa7a4634f:/var/lib/postgresql# pg_dump -U postgres -d test_database >test_database_dump.sql
+
 Как бы вы доработали бэкап-файл, чтобы добавить уникальность значения столбца `title` для таблиц `test_database`?
+Можно добавить индекс.
 
 ---
 
