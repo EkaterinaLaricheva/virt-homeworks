@@ -64,6 +64,8 @@
 В виде результата этой задачи приложите вывод команды `terraform --version`.
 
 РЕШНИЕ:
+![image](https://user-images.githubusercontent.com/91233405/174036521-3f1a45b4-03ff-4880-bb72-5eb5aa7f8dc7.png)
+
 
 
 ## Задача 3. Поддержка легаси кода. 
