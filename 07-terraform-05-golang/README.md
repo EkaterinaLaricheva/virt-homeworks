@@ -27,23 +27,7 @@
 1. Напишите программу для перевода метров в футы (1 фут = 0.3048 метр). Можно запросить исходные данные 
 у пользователя, а можно статически задать в коде.
     Для взаимодействия с пользователем можно использовать функцию `Scanf`:
-    ```
-    package main
-    
-    import "fmt"
-    
-    func main() {
-        fmt.Print("Enter a number: ")
-        var input float64
-        fmt.Scanf("%f", &input)
-    
-        output := input * 2
-    
-        fmt.Println(output)    
-    }
-    ```
    
-
         package main
         
         import "fmt"
@@ -60,9 +44,9 @@
             sOutput := fmt.Sprintf("( %.2f)", output)
             fmt.Println("Value in Meters:", rOutput, sOutput )    
         }
-        
-        
-        [image](https://user-images.githubusercontent.com/91233405/174253424-ed311df9-71fc-445a-8a4a-03c1c472a606.png)
+
+https://user-images.githubusercontent.com/91233405/174253424-ed311df9-71fc-445a-8a4a-03c1c472a606.png
+     
    
    
 1. Напишите программу, которая найдет наименьший элемент в любом заданном списке, например:
@@ -92,7 +76,7 @@
             fmt.Println("Минимальное число : ", current)
         }    
         
-  [image](https://user-images.githubusercontent.com/91233405/174251991-38e8f255-9a48-4796-814f-0ce45f7c3665.png)
+ https://user-images.githubusercontent.com/91233405/174251991-38e8f255-9a48-4796-814f-0ce45f7c3665.png
   
 1. Напишите программу, которая выводит числа от 1 до 100, которые делятся на 3. То есть `(3, 6, 9, …)`.
 
@@ -118,7 +102,7 @@
             }
         }
         
-  ![image](https://user-images.githubusercontent.com/91233405/174252281-f81745ad-6cff-488a-a99a-0747185ac0c8.png)
+ https://user-images.githubusercontent.com/91233405/174252281-f81745ad-6cff-488a-a99a-0747185ac0c8.png
 
 В виде решения ссылку на код или сам код. 
 
