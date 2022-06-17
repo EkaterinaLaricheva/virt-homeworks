@@ -42,9 +42,9 @@
         fmt.Println(output)    
     }
     ```
-    ![image](https://user-images.githubusercontent.com/91233405/174251645-e99e2476-09af-4874-93dd-a596586288bd.png)
+   
 
-    package main
+        package main
         
         import "fmt"
         
@@ -60,15 +60,19 @@
             sOutput := fmt.Sprintf("( %.2f)", output)
             fmt.Println("Value in Meters:", rOutput, sOutput )    
         }
- 
+        
+        
+        [image](https://user-images.githubusercontent.com/91233405/174253424-ed311df9-71fc-445a-8a4a-03c1c472a606.png)
+   
+   
 1. Напишите программу, которая найдет наименьший элемент в любом заданном списке, например:
     ```
     x := []int{48,96,86,68,57,82,63,70,37,34,83,27,19,97,9,17,}
     
        ```
-       ![image](https://user-images.githubusercontent.com/91233405/174251991-38e8f255-9a48-4796-814f-0ce45f7c3665.png)
+       
 
-       package main
+        package main
         
         import "fmt"
         
@@ -87,12 +91,13 @@
             }
             fmt.Println("Минимальное число : ", current)
         }    
+        
+  [image](https://user-images.githubusercontent.com/91233405/174251991-38e8f255-9a48-4796-814f-0ce45f7c3665.png)
+  
 1. Напишите программу, которая выводит числа от 1 до 100, которые делятся на 3. То есть `(3, 6, 9, …)`.
 
-![image](https://user-images.githubusercontent.com/91233405/174252281-f81745ad-6cff-488a-a99a-0747185ac0c8.png)
 
-
- package main
+        package main
         
         import "fmt"
         
@@ -112,6 +117,8 @@
                 }
             }
         }
+        
+  ![image](https://user-images.githubusercontent.com/91233405/174252281-f81745ad-6cff-488a-a99a-0747185ac0c8.png)
 
 В виде решения ссылку на код или сам код. 
 
