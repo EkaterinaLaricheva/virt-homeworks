@@ -45,7 +45,7 @@
             fmt.Println("Value in Meters:", rOutput, sOutput )    
         }
 
-https://user-images.githubusercontent.com/91233405/174253424-ed311df9-71fc-445a-8a4a-03c1c472a606.png
+![image](https://user-images.githubusercontent.com/91233405/174253424-ed311df9-71fc-445a-8a4a-03c1c472a606.png)
      
    
    
@@ -76,7 +76,8 @@ https://user-images.githubusercontent.com/91233405/174253424-ed311df9-71fc-445a-
             fmt.Println("Минимальное число : ", current)
         }    
         
- https://user-images.githubusercontent.com/91233405/174251991-38e8f255-9a48-4796-814f-0ce45f7c3665.png
+ ![image](https://user-images.githubusercontent.com/91233405/174251991-38e8f255-9a48-4796-814f-0ce45f7c3665.png)
+ 
   
 1. Напишите программу, которая выводит числа от 1 до 100, которые делятся на 3. То есть `(3, 6, 9, …)`.
 
@@ -102,7 +103,7 @@ https://user-images.githubusercontent.com/91233405/174253424-ed311df9-71fc-445a-
             }
         }
         
- https://user-images.githubusercontent.com/91233405/174252281-f81745ad-6cff-488a-a99a-0747185ac0c8.png
+ ![image](https://user-images.githubusercontent.com/91233405/174252281-f81745ad-6cff-488a-a99a-0747185ac0c8.png)
 
 В виде решения ссылку на код или сам код. 
 
